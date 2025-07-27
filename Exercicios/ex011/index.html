@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body>
+    <H1>Imagens Dinâmicas</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>    
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagen flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1> <!-- forma simples de colocar audio-->
+    <p>Vamos aprender a reproduzir audios em HTML5. </p>
+     <audio src="midia/maple -dyalla.mp3" controls autoplay></audio>
+    <!--forma detalhada de incluir audio, é importante colocar na ordem exposta abaixo;
+
+    <audio preload="metadata" autoplay controls loop>
+    <source src="midia/maple -dyalla.mp3" type="audio/mpeg">
+    <source src="midia/maple -daylla.ogg" type="audio/ogg">
+    <source src="midia/maple -daylla.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. a href="midia/maple -daylla.mp3">Clique aqui para baixar o arquivo mp3!</a></p>
+    </audio>
+    -->
+
+    <!--formatos aceitos pelos navegadores MP3, WAV, OGG
+    --- a tag controls autoplay vai mostrar o control na tela para play, caso use apenas a tag control autoplay sem a letra s no final do con trol o audio sera reproduzido automatico na página
+
+    -->
+</body>
+</html>
