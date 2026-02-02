@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <!--Sempre que houver necessidade de enviar arquivo de foto não é possivel utilizar no FORMULÁRIO o METHOD "GET", usaremos o METHOD "POST"-->
+
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="iniv">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="iniv" min="0" max="5" value="1">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+           <input type="submit" value="Enviar">
+           <input type="submit" value="Limpar">
+        </p>
+    
+    </form>
+    
+</body>
+</html>
