@@ -28,8 +28,9 @@ i#burguer{
     cursor: pointer;
 }
 
-menu{
+menu a{
     display: none;
+    
 }
 
 menu > ul{
